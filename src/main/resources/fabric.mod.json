@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "malusphaethusa",
+  "version": "${version}",
+
+  "name": "Malus Phaethusa",
+  "description": "A Small Fabric Mod That Brings The Golden Apple Cows to Minecraft!",
+  "authors": [
+    "ZestyBlaze"
+  ],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/malus-phaethusa",
+    "sources": "https://github.com/ZestyBlaze/Malus-Phaethusa-2",
+    "issues": "https://github.com/ZestyBlaze/Malus-Phaethusa-2/issues"
+  },
+
+  "license": "MIT License",
+  "icon": "icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.zestyblaze.malusphaethusa.MalusPhaethusa"
+    ],
+    "client": [
+      "net.zestyblaze.malusphaethusa.client.MalusPhaethusaClient"
+    ]
+  },
+  "mixins": [
+    "malusphaethusa.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric-api": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
